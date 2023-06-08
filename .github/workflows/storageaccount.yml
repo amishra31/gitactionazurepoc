@@ -1,5 +1,9 @@
 on: [push]
 name: Azure ARM
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
